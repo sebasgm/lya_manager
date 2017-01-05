@@ -1,0 +1,28 @@
+<MainView>:
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            id: button1
+            text: 'Pacientes'
+            size_hint_x: 1
+            size_hint_y: None
+            #on_release: root.show_load()
+        Button:
+            id: button2
+            text: 'Turnos'
+            size_hint_x: 1
+            size_hint_y: None
+            #on_release: root.show_save()
+    BoxLayout:
+        orientation: 'vertical'
+        CalendarWidget
+
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: username_input
+            font_size: 20
+            center_x: root.width * 0.5
+            center_y: root.top * 0.6
+            height: 35
+            width: 300
